@@ -2,7 +2,7 @@ import serial
 import struct
 
 # 시리얼 포트 설정 (Windows: "COMx", Linux: "/dev/ttyUSBx")
-ser = serial.Serial(port="COM62", baudrate=115200, timeout=1)
+ser = serial.Serial(port="COM29", baudrate=115200, timeout=1)
 
 while True:
     data = ser.read(18)  # 10바이트 수신 (16비트 데이터 5개)

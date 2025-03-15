@@ -468,6 +468,9 @@ void MPU6050_Read(uint8_t reg, uint8_t* data, uint8_t length) {
 }
 
 void MPU6050_Init(void) {
+	// reset
+	MPU6050_Write(PWR_MGMT_1, 0x80);
+	HAL_Delay(100);
     // 1️⃣ ?��?�� 모드 ?��?�� (PWR_MGMT_1)
     MPU6050_Write(PWR_MGMT_1, 0x00);
     HAL_Delay(100);
@@ -477,8 +480,8 @@ void MPU6050_Init(void) {
     HAL_Delay(10);
 
     // 2️⃣ ?��?���??? 범위 ?��?�� (±250°/s)
-    //MPU6050_Write(0x1B, 0x00);  // 00 = ±250°/s
-    //HAL_Delay(10);
+    MPU6050_Write(0x1B, 0x00);  // 00 = ±250°/s
+    HAL_Delay(10);
 
     // 3️⃣ ?��?���???? ?��?�� ?��?�� (SMPLRT_DIV)
     MPU6050_Write(SMPLRT_DIV, 0x07);  // 1kHz / (1 + 7) = 125Hz ?��?���????

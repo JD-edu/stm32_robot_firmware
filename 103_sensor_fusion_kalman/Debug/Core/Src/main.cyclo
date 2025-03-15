@@ -12,10 +12,10 @@
 ../Core/Src/main.c:454:6:MPU6050_Write	2
 ../Core/Src/main.c:461:6:MPU6050_Read	3
 ../Core/Src/main.c:470:6:MPU6050_Init	1
-../Core/Src/main.c:492:6:MPU6050_ReadAccel	1
-../Core/Src/main.c:502:6:MPU6050_ReadGyro	1
-../Core/Src/main.c:512:6:Send_IMU_Data	1
-../Core/Src/main.c:540:6:Kalman_Init	1
-../Core/Src/main.c:547:7:Kalman_Update	1
-../Core/Src/main.c:579:6:Compute_Orientation_Kalman	1
-../Core/Src/main.c:607:6:Error_Handler	1
+../Core/Src/main.c:495:6:MPU6050_ReadAccel	1
+../Core/Src/main.c:505:6:MPU6050_ReadGyro	1
+../Core/Src/main.c:515:6:Send_IMU_Data	1
+../Core/Src/main.c:543:6:Kalman_Init	1
+../Core/Src/main.c:550:7:Kalman_Update	1
+../Core/Src/main.c:582:6:Compute_Orientation_Kalman	1
+../Core/Src/main.c:610:6:Error_Handler	1
