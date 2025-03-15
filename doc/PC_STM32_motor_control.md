@@ -1,4 +1,5 @@
 아래 코드는 'a' 입력받아 PD14 LED on하고 'b' 입력받아 PD14 LED off 하는 코드
+```
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
@@ -704,3 +705,4 @@ void assert_failed(uint8_t *file, uint32_t line)
   /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */
+```
