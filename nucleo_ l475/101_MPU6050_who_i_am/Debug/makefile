@@ -60,8 +60,8 @@ all: main-build
 main-build: 101_MPU6050_who_i_am.elf secondary-outputs
 
 # Tool invocations
-101_MPU6050_who_i_am.elf 101_MPU6050_who_i_am.map: $(OBJS) $(USER_OBJS) C:\Users\conne\Downloads\stm32_robot_firmware\nucleo_\ l475\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "101_MPU6050_who_i_am.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conne\Downloads\stm32_robot_firmware\nucleo_ l475\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="101_MPU6050_who_i_am.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+101_MPU6050_who_i_am.elf 101_MPU6050_who_i_am.map: $(OBJS) $(USER_OBJS) C:\Users\conne\Downloads\stm32_robot_firmware\nucleo_\ l475\101_MPU6050_who_i_am\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "101_MPU6050_who_i_am.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conne\Downloads\stm32_robot_firmware\nucleo_ l475\101_MPU6050_who_i_am\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="101_MPU6050_who_i_am.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

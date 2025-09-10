@@ -60,8 +60,8 @@ all: main-build
 main-build: 102_read_gyro_accel.elf secondary-outputs
 
 # Tool invocations
-102_read_gyro_accel.elf 102_read_gyro_accel.map: $(OBJS) $(USER_OBJS) C:\Users\conne\STM32CubeIDE\workspace_1.19.0\102_read_gyro_accel\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "102_read_gyro_accel.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conne\STM32CubeIDE\workspace_1.19.0\102_read_gyro_accel\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="102_read_gyro_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+102_read_gyro_accel.elf 102_read_gyro_accel.map: $(OBJS) $(USER_OBJS) C:\Users\conne\Downloads\stm32_robot_firmware\nucleo_\ l475\102_read_gyro_accel\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "102_read_gyro_accel.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\conne\Downloads\stm32_robot_firmware\nucleo_ l475\102_read_gyro_accel\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="102_read_gyro_accel.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
